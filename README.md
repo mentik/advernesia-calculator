@@ -8,9 +8,9 @@ Advernesia calculator is an open-source project hosted on the Advernesia website
 
 I highly appreciate every contribution or review to this project.
 
-## Volunteer review
+## Volunteer reviewer
 
-- Getser Surbakti (math formula reviewer)
+- Getser Surbakti (Math formula reviewer)
 
 ## Third party translator 
 
