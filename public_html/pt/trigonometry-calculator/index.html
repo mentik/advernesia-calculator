@@ -1,0 +1,188 @@
+<!doctype html>
+<!--[if IE 8]>	<html class="ie8" lang="pt"> <![endif]-->
+<!--[if IE 9]>	<html class="ie9" lang="pt"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt"> <!--<![endif]-->
+<head>
+  <title>Calculadora de trigonometria | Grau Completo + Modo Radiano</title>
+  <link rel="alternate" href="https://calculator.advernesia.com/pt/trigonometry-calculator/" hreflang="pt" />
+  <link rel="canonical" href="https://calculator.advernesia.com/pt/trigonometry-calculator/" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Calculadora de trigonometria com modo de graus ou radianos para trigonometria inversa, trigonometria inversa e razão de trigonometria recíproca" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" content="Calculadora de trigonometria, calculadora de radianos, calculadora de trigonometria inversa, calculadora de pecado, calculadora de cos, calculadora de tan" />
+  
+  <script type="text/javascript" src="https://calculator.advernesia.com/scripts/radian.v3.min.js"></script>
+  <style>html{scroll-behavior:smooth}body{margin:0 auto;max-width:480px}input{width:96%;height:100%;border:none;font-size:22px;font-weight:700;padding:0 2% 0 2%;text-align:right}.tablex{padding:0 0 20px 0;background-color:#fff;text-align:center;width:fit-content;height:calc(81vh - 70px);max-height:620px}.inputx{font-size:0}td{;border:solid black 2px;max-width:90px;width:18vw;height:12%;text-align:center;font-size:22px;font-weight:700;color:#000;background:#dfe1e8}td:active{background-color:#7d7d7d}#shiftBtn{background-color:#ffe000}body,h1,h2,h3,h4,h5,h6{font-family:sans-serif}.empty{margin:1px 5px}h2{font-size:18px;text-decoration:underline}h3{font-size:16px}pre{white-space:normal}textarea#result{min-height: calc(100% - 42px);font-size:30px;font-family:sans-serif;width:98%;max-width:-webkit-fill-available;max-width:-moz-available;border:none;text-align:right;}td.x1{background:0 0;height:fit-content;padding:0 2px 0 2px}pre{padding: 4px 10px;border-radius: 0.3em;margin-top: 24px;border-left:3px solid black;border-top:1px solid;border-bottom:1px solid;border-right:1px solid;white-space: pre-wrap;word-wrap: break-word;font-size:16px;}.help{font-weight:bolder;border: solid 1px black;padding: 4px;background-color: #dfe1e8;text-align: center;width: 28px;margin: 0 4px 4px 4px;display: inline-block;}.example{margin:12px 0 34px 4px;}@media (min-height:500px){.tablex{min-height:416px}}button{margin:4px}</style>
+  <script>
+    var lang_inv = "(Undefined!)";var lang_inf = "(Infinity!)";var lang_infm = "-(Infinity!)";var lang_exp = "<sub>po</sub><sup>wer</sup>";var lang_sqrt = "sqrt";var lang_cbrt = "cbrt";var lang_error = "Por favor, verifique!";</script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-175013226-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+
+<div class="empty">
+<h1 style="font-size:14px;">Calculadora trigonométrica + funções trigonométricas completas [RAD]</h1>
+<div style="margin-bottom: 12px;font-size:14px;">
+  <a href="https://calculator.advernesia.com/pt/index/">Mais ferramentas</a> | <a href="https://calculator.advernesia.com/pt/">[DEG]</a> | <strong>[RAD]</strong> | <a href="#How">Como usar</a></div>
+<div class="kalkulator">
+<p class="inputx" id="myPara"></p>
+<p class="inputx" id="error"></p>
+    <table class="tablex" style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;margin-bottom:12px;padding:1px;box-shadow: 0 0 2px 0 black">
+        <tbody>
+            <tr>
+                <td colspan="5" class="x1">
+                    <div style="padding:1px 4px 4px 0;white-space: nowrap;text-align:right">
+                    <button style="display:inline;margin:0" id="myBtn">História</button>
+                    <textarea style="width: calc( 100% - 100px );text-align:right;font-size:14px;border:none;height:14px;resize:none;line-height:14px;overflow-y: hidden;margin-left:7px;font-family: arial;display:inline;padding-right: 3px;" class="inputx" id="calculate" readonly=""></textarea>
+                    </div>
+                    <textarea id="result" readonly=""></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td onclick="shiftFn(1)" id="shiftBtn" style="font-size:18px">F2</td>
+                <td onclick="trigo('sin')" style="font-size:16px">sin</td>
+                <td onclick="trigo('cos')" style="font-size:16px">cos</td>
+                <td onclick="trigo('tan')" style="font-size:16px">tan</td>
+                <td onclick="per()" style="font-size:20px">%</td>
+            </tr>
+            <tr>
+                <td onclick="pow()" style="font-size:20px;padding:6px 0 0 0;line-height:14px">^<span style="font-size:12px;display: block;font-weight:normal"><sub>po</sub><sup>wer</sup></span></td>
+                <td onclick="sqrt()"><span style="font-size:20px;padding:6px 0 0 0;line-height:18px">√</span><span style="font-size:12px;display: block;font-weight:normal">sqrt</span></td>
+                <td onclick="piOrE('pi')">π</td>
+                <td onclick="piOrE('e')"><span style="font-size:20px">e</span><span style="font-size:12px;display: block;font-weight:normal">euler</span></td>
+                <td onclick="log(1)" style="font-size:16px">log</td>
+            </tr>
+            <tr>
+                <td onclick="input('7')">7</td>
+                <td onclick="input('8')">8</td>
+                <td onclick="input('9')">9</td>
+                <td onclick="del()">←</td>
+                <td onclick="ac()"><span style="font-size:18px">AC</span></td>
+            </tr>
+            <tr>
+                <td onclick="input('4')">4</td>
+                <td onclick="input('5')">5</td>
+                <td onclick="input('6')">6</td>
+                <td onclick="multOrDiv('mult')">×</td>
+                <td onclick="multOrDiv('div')">÷</td>
+            </tr>
+            <tr>
+                <td onclick="input('1')">1</td>
+                <td onclick="input('2')">2</td>
+                <td onclick="input('3')">3</td>
+                <td onclick="input('+')">+</td>
+                <td onclick="minx()">-</td>
+            </tr>
+            <tr>
+                <td onclick="input('0')">0</td>
+                <td onclick="input('.')">.</td>
+                <td onclick="leftParen()">(</td>
+                <td onclick="input(')')">)</td>
+                <td onclick="equal()">=</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<style>
+@media(max-width:479px){.top_ads{width:320px;height:50px;display:block;margin:0px auto 0;}}
+@media(min-width:480px){.top_ads{width:468px;height:60px;display:block;margin:0px auto 0;}}
+</style>
+<div style="margin:0 auto;text-align:center;">
+<ins class="adsbygoogle top_ads" data-ad-client="ca-pub-6073869037028979" data-ad-slot="1150933633"></ins>
+<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<h2 id="How">A. Como usar a calculadora trigonométrica</h2>
+<p><strong>Importante!</strong> esta calculadora de trigonometria usa o modo [RAD] ou o modo radianos. Isso é usado para cálculos trigonométricos. Por exemplo cos (1) igual a cos 1 Rad . Algumas calculadoras usam o modo RAD ou Radian (1 RAD = 57.296 °) como configuração padrão. </p>
+<p>Clique em [DEG] para alterar o modo de graus.</p>
+
+<h2><strong>B. Funções do botão de trigonometria</strong></h2>
+
+<h3><strong>B.1 Funções básicas do botão de trigonometria</strong></h3>
+<p><span class="help">sin</span> botão calcula seno</p>
+<p><span class="help">cos</span> botão calcula cosseno</p>
+<p><span class="help">tan</span> botão calcula tangente</p>
+
+<div style="margin:0 auto 12px;text-align:center;">
+<ins class="adsbygoogle" data-ad-client="ca-pub-6073869037028979" style="width:300px;height:250px;display:block;margin:0px auto 0;" data-ad-slot="6870804803"></ins>
+<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<h3><strong>B.2 Funções do botão de trigonometria inversa</strong></h3>
+<p><span class="help" style="width:40px">sin⁻¹</span> botão calcula arcsin</p>
+<p><span class="help" style="width:40px">cos⁻¹</span> botão calcula arco-cosina</p>
+<p><span class="help" style="width:40px">tan⁻¹</span> botão calcula arctan</p>
+
+<h3><strong>B.3 Funções do botão de Trig Ratio Recíproco</strong></h3>
+<p><span class="help">csc</span> botão calcula cossecante</p>
+<p><span class="help">sec</span> botão calcula secante</p>
+<p><span class="help">cot</span> botão calcula cotangente</p>
+
+
+<h2><strong>C. Funções do botão de geometria e logaritmo</strong></h2>
+<p><span class="help">π</span> botão insere constante phi</p>
+<p><span class="help">e</span> botão entradas euler constante</p>
+<p><span class="help">log</span> botão executa logaritmo de base 10</p>
+<p><span class="help">ln</span> botão executa logaritmo natural</p>
+
+<div style="margin:0 auto 12px;text-align:center;">
+<ins class="adsbygoogle" data-ad-client="ca-pub-6073869037028979" style="width:300px;height:250px;display:block;margin:0px auto 0;" data-ad-slot="5557723139"></ins>
+<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<h2><strong>D. Funções do teclado</strong></h2>
+<p>Você pode usar o teclado para inserir o número e o operador aritmético</p>
+<p><span class="help">0</span> <span class="help">1</span> <span class="help">2</span> <span class="help">3</span> <span class="help">4</span> <span class="help">5</span> <span class="help">6</span> <span class="help">7</span> <span class="help">8</span> <span class="help">9</span> <span class="help">.</span> a chave pode usar para inserir o número</p>
+<p><span class="help">+</span> <span class="help">-</span> <span class="help">*</span> <span class="help">/</span> chave pode ser usada para inserir operador aritmético</p>
+<p><span class="help" style="width:80px">Backspace</span> pode ser usada para limpar os últimos dígitos</p>
+<p><span class="help" style="width:40px">Entrar</span> a chave pode ser usada para executar o cálculo (igual a igual)</p>
+
+
+<p>Obrigado por usar nossa calculadora matemática online!</p> 
+<div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <pre style="background: none;border: 1px black solid;border-radius: 0;margin-top: 37px;white-space: pre;overflow: scroll;max-height:calc( 60vh - 200px );font-family: arial" id="history"><strong>História</strong></pre>
+        <button id="btn2" type="button">Limpar histórico</button>
+        <p>Clique no valor do resultado para usá-lo na tela da calculadora</p>
+        <pre style="background: none;border: 1px black solid;border-radius: 0;margin-top: 4px;white-space: pre;overflow: scroll;min-height: 16px;font-family: arial" id="work"></pre>
+        <button type="button" onclick="xdel()">←</button>
+        <button style="margin-left: 4px" onclick="xac()" type="button">AC</button>
+        <p>Nota: o botão "<span style="color: #aaa;font-weight: 700;"> × </span>" fecha a janela do histórico</p>
+      </div>
+</div>
+
+<script> var modal=document.getElementById("myModal"),btn=document.getElementById("myBtn"),span=document.getElementsByClassName("close")[0];function inputx(e){var n=document.getElementById("result"),t=document.getElementById("myPara");s=document.getElementById("work"),n.value+=e,t.innerHTML+=e,s.innerHTML+=e}function xac(){var e=document.getElementById("result"),n=document.getElementById("myPara");w=document.getElementById("calculate"),s=document.getElementById("work"),e.value=n.innerHTML=w.innerHTML=s.innerHTML=""}function xdel(){del(),document.getElementById("work").innerHTML=document.getElementById("result").value}btn.onclick=function(){modal.style.display="block",document.getElementById("work").innerHTML=document.getElementById("result").value},span.onclick=function(){modal.style.display="none"},window.onclick=function(e){e.target==modal&&(modal.style.display="none")},document.getElementById("btn2").onclick=function(){document.getElementById("history").innerHTML="<strong>História<strong>"}; </script>
+
+<style type="text/css"> .modal{display:none;position:fixed;z-index:1;padding-top:10vh;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4)}.modal-content{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;width:80%;max-width:400px}.close{color:#aaa;float:right;font-size:28px;font-weight:700}.close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer} </style>
+<script> 
+    function loghist(e){n=document.getElementById("result"),s=document.getElementById("work"),s.innerHTML=n.value}document.addEventListener("keydown",function(e){e.shiftKey?187==e.keyCode?input("+"):57==e.keyCode?leftParen():48==e.keyCode?input(")"):56==e.keyCode?multOrDiv("mult"):54==e.keyCode?pow():53==e.keyCode?per():49==e.keyCode&&input("!"):49==e.keyCode||97==e.keyCode?input("1"):50==e.keyCode||98==e.keyCode?input("2"):49==e.keyCode||97==e.keyCode?input("1"):50==e.keyCode||98==e.keyCode?input("2"):51==e.keyCode||99==e.keyCode?input("3"):52==e.keyCode||100==e.keyCode?input("4"):53==e.keyCode||101==e.keyCode?input("5"):54==e.keyCode||102==e.keyCode?input("6"):55==e.keyCode||103==e.keyCode?input("7"):56==e.keyCode||104==e.keyCode?input("8"):57==e.keyCode||105==e.keyCode?input("9"):48==e.keyCode||96==e.keyCode?input("0"):8==e.keyCode?del():110==e.keyCode||190==e.keyCode?input("."):191==e.keyCode||111==e.keyCode?multOrDiv("div"):107==e.keyCode?input("+"):109==e.keyCode||189==e.keyCode?minx():88==e.keyCode||106==e.keyCode?multOrDiv("mult"):27==e.keyCode?ac():187!=e.keyCode&&13!=e.keyCode||equal()},!0),document.addEventListener("keydown",loghist);
+    </script>
+
+
+<hr>
+<p>Calculadora de trigonometria | Funções trigonométricas de graus + radianos v3 Advernesia | <a href="https://calculator.advernesia.com/about/" title="About Online Math Calculator">Sobre</a> | <a href="https://calculator.advernesia.com/disclaimer/" title="Disclaimer"> Aviso Legal</a> | <a href="https://calculator.advernesia.com/privacy-policy/" title="Privacy and Policy">Privacidade e política (GDPR)</a> | <a href="https://calculator.advernesia.com/contact-us/" title="Contact Us">Contate-nos e doe</a> | Analisado pelo Google Analytic | Anúncios do AdSense</p>
+
+</div>
+
+</body>
+</html>

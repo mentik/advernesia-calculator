@@ -1,0 +1,79 @@
+<!doctype html>
+<!--[if IE 8]>	<html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>	<html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <title>Index</title>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://calculator.advernesia.com/index/" />
+  <meta name="description" content="Index" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+  	html{scroll-behavior:smooth}body{margin:0 auto;max-width:480px}body,h1,h2,h3,h4,h5,h6{font-family:sans-serif}pre{ white-space:normal;padding: 4px 10px;border-radius: 0.3em;margin-top: 24px;border-left:3px solid black;border-top:1px solid;border-bottom:1px solid;border-right:1px solid;white-space: pre-wrap;word-wrap: break-word;font-size:16px;}.empty{margin:1px 5px}h2{font-size:18px;text-decoration:underline}h3{font-size:16px}
+	</style>
+  <script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        return;
+      }
+    }
+  };
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-175013226-1', 'auto');
+    ga('send', 'pageview');
+   </script>
+</head>
+<body>
+<div class="empty">
+<h1>Index</h1>
+<h2>Tools</h2>
+<ol>
+	<li><a href="https://calculator.advernesia.com/">Scientific Calculator [DEG]</a></li>
+	<li><a href="https://calculator.advernesia.com/trigonometry-calculator/">Scientific Calculator [RAD]</a></li>
+</ol>
+<h2>Other Languanges</h2>
+ <div w3-include-html="https://calculator.advernesia.com/index/lang.html"></div> 
+ <script>includeHTML();</script>
+ <style>.active {font-weight:bold;color:black;}</style>
+ <script>
+    window.onload = function() { 
+        var all_links = document.getElementById("language").getElementsByTagName("a"),
+            i=0, len=all_links.length,
+            full_path = location.href.split('#')[0]; //Ignore hashes?
+        for(; i<len; i++) {
+            if(all_links[i].href.split("#")[0] == full_path) {
+                all_links[i].className += " active";
+            }
+        }
+    }
+ </script>
+<hr>
+<p><a href="https://calculator.advernesia.com/">Home</a> | <a href="https://calculator.advernesia.com/about/" title="About Online Math Calculator">About</a> | <a href="https://calculator.advernesia.com/disclaimer/" title="Disclaimer">Disclaimer</a> | <a href="https://calculator.advernesia.com/privacy-policy/" title="Privacy and Policy">Privacy and Policy (GDPR)</a> | <a href="https://calculator.advernesia.com/contact-us/" title="Contact Us">Contact Us</a> | Analyzed by Google Analytic | Ads by AdSense</p>
+</div>
+</body>
+</html>
