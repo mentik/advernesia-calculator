@@ -8,12 +8,12 @@ Advernesia calculator is an open-source project hosted on the Advernesia website
 
 I highly appreciate every contribution or review to this project.
 
-## Volunteer review: 
+## Volunteer review
 
 - Getser Surbakti (math formula reviewer)
 
-## Third party translator: 
+## Third party translator 
 
-- Mustika translator (Mustika Translator)
+- Mustika translator (Chinese)
 
 Thank you :)
