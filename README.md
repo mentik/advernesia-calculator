@@ -6,9 +6,21 @@ URL: <a href="https://calculator.advernesia.com" target="_blank">https://calcula
 
 Advernesia calculator is an open-source project hosted on the Advernesia website.
 
-I highly appreciate every contribution or review to this project.
+## Start nginx Server
+
+```sh
+start nginx
+```
+
+## Quit nginx Server
+
+```sh
+.\nginx -s quit
+```
 
 ## Volunteer Contributor
+
+I highly appreciate every contribution or review to this project.
 
 - Getser Surbakti (Math formula reviewer)
 - I Putu Wahyu Pebriana (IOS UX reviewer)
