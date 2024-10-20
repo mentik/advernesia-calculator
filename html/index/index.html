@@ -34,19 +34,19 @@
 </ol>
 <h2>Other Languanges</h2>
 <!--#include virtual="/index/lang.html" -->
- <style>.active {font-weight:bold;color:black;}</style>
- <script>
-    window.onload = function() { 
-      var all_links = document.getElementById("language").getElementsByTagName("a"),
-        i=0, len=all_links.length,
-        full_path = location.href.split('#')[0]; //Ignore hashes?
-      for(; i<len; i++) {
-        if(all_links[i].href.split("#")[0] == full_path) {
-            all_links[i].className += " active";
-        }
+<style>.active {font-weight:bold;color:black;}</style>
+<script>
+  window.onload = function() { 
+    var all_links = document.getElementById("language").getElementsByTagName("a"),
+      i=0, len=all_links.length,
+      full_path = location.href.split('#')[0]; //Ignore hashes?
+    for(; i<len; i++) {
+      if(all_links[i].href.split("#")[0] == full_path) {
+          all_links[i].className += " active";
       }
     }
- </script>
+  }
+</script>
 <hr>
 <p><a href="/">Home</a> | <a href="/about/" title="About Online Math Calculator">About</a> | <a href="/disclaimer/" title="Disclaimer">Disclaimer</a> | <a href="/privacy-policy/" title="Privacy and Policy">Privacy and Policy (GDPR)</a> | <a href="/contact-us/" title="Contact Us">Contact Us</a> | Analyzed by Google Analytic | Ads by AdSense</p>
 </div>
